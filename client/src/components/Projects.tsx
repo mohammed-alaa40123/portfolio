@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { ExternalLink, Github, FileText } from 'lucide-react';
 
-const BASE = '/imgs/';
+const BASE = `${import.meta.env.BASE_URL}imgs/`;
 
 const projects = [
   {

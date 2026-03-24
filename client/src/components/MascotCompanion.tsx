@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const CAT_IMAGE = '/imgs/robot_mascot2.png';
+const CAT_IMAGE = `${import.meta.env.BASE_URL}imgs/robot_mascot2.png`;
 
 const MESSAGES = [
   "I've calculated 1.4 million ways this portfolio could be better. This is currently the top one.",

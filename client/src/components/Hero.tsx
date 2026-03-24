@@ -2,8 +2,8 @@ import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion'
 import { Github, Linkedin, Mail, MapPin, Sparkles, FileText } from 'lucide-react';
 import { useRef, useState, useEffect } from 'react';
 
-const ROBOT_MASCOT = '/imgs/robot_mascot2.png';
-const PROFILE_IMAGE = '/imgs/profile_researcher.png';
+const ROBOT_MASCOT = `${import.meta.env.BASE_URL}imgs/robot_mascot2.png`;
+const PROFILE_IMAGE = `${import.meta.env.BASE_URL}imgs/profile_researcher.png`;
 
 const INTEREST_TITLES = [
   'Agentic AI Engineer',
