@@ -34,14 +34,14 @@ export default function Home() {
       <footer className="border-t border-border/50 py-8">
         <div className="container max-w-6xl mx-auto px-4 md:px-8 text-center text-muted-foreground text-sm flex flex-col md:flex-row justify-between items-center gap-4">
           <p>© 2026 <span className="text-foreground font-semibold">Mohamed Ahmed</span> · Purdue University ECE / DSNL Lab</p>
-          <div className="flex items-center gap-4 text-xs text-muted-foreground/60">
-            <span>On-Device AI</span>
+          <div className="flex items-center gap-3 text-xs text-muted-foreground/60 flex-wrap justify-center">
+            <span>LLM Inference Optimization</span>
             <span>·</span>
-            <span>LLM Inference Systems</span>
+            <span>Edge AI Systems</span>
             <span>·</span>
-            <span>Mobile Runtime Systems</span>
+            <span>Trustworthy & Secure Agentic AI</span>
             <span>·</span>
-            <span>LLM Security</span>
+            <span>Human–AI Interaction</span>
           </div>
         </div>
       </footer>

@@ -3,14 +3,14 @@ import { Github, Linkedin, Mail, MapPin, Sparkles, FileText } from 'lucide-react
 import { useRef, useState, useEffect } from 'react';
 
 const ROBOT_MASCOT = `${import.meta.env.BASE_URL}imgs/robot_mascot2.png`;
-const PROFILE_IMAGE = `${import.meta.env.BASE_URL}imgs/profile_researcher.png`;
+const PROFILE_IMAGE = `${import.meta.env.BASE_URL}imgs/mohamed_purdue.jpg`;
 
 const INTEREST_TITLES = [
   'Ph.D. Student in ECE @ Purdue',
-  'On-Device AI & LLM Systems Researcher',
-  'Mobile Runtime & Systems Optimizer',
-  'Heterogeneous SoC Acceleration (Snapdragon/Tensor)',
-  'Trustworthy AI & LLM Security Researcher',
+  'LLM Inference Optimization',
+  'Edge AI Systems Builder',
+  'Trustworthy & Secure Agentic AI',
+  'Human–AI Interaction Researcher',
 ];
 
 function AnimatedTitle() {
@@ -85,7 +85,7 @@ export default function Hero() {
                 <img
                   src={PROFILE_IMAGE}
                   alt="Mohamed Ahmed"
-                  className="w-full h-full object-cover scale-110 hover:scale-100 transition-transform duration-700"
+                  className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-700"
                 />
               </motion.div>
 
@@ -125,7 +125,7 @@ export default function Hero() {
             <AnimatedTitle />
 
             <motion.p variants={itemVariants} className="text-base text-muted-foreground leading-relaxed max-w-lg mb-8 mt-4">
-              Ph.D. student in Electrical & Computer Engineering at <strong className="text-foreground">Purdue University</strong> (Distributed Systems & Networks Lab, advised by Prof. Y. Charlie Hu). Researching on-device MoE/LLM inference, mobile runtime systems, and heterogeneous SoC acceleration across Qualcomm Snapdragon and Google Tensor platforms.
+              Ph.D. student in Electrical & Computer Engineering at <strong className="text-foreground">Purdue University</strong> (Distributed Systems & Networks Lab, advised by Prof. Y. Charlie Hu).
             </motion.p>
 
             <motion.div variants={itemVariants} className="flex items-center gap-2 mb-8 justify-center md:justify-start text-sm text-muted-foreground font-medium">
@@ -173,12 +173,10 @@ export default function Hero() {
             {/* Research interests tags */}
             <motion.div variants={itemVariants} className="flex flex-wrap gap-2 justify-center md:justify-start">
               {[
-                'On-Device AI',
-                'LLM Inference Systems',
-                'Mobile Runtime Systems',
-                'Heterogeneous SoCs',
-                'LLM Security',
-                'Edge AI',
+                'LLM Inference Optimization',
+                'Edge AI Systems',
+                'Trustworthy & Secure Agentic AI',
+                'Human–AI Interaction',
               ].map((tag) => (
                 <span key={tag} className="badge-primary px-4 py-1.5 text-[10px] uppercase tracking-wider">{tag}</span>
               ))}
