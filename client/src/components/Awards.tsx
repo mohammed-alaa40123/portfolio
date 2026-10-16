@@ -3,36 +3,68 @@ import { Trophy, Star, Award, Medal } from 'lucide-react';
 
 const awards = [
   {
-    title: 'AAAI-2026 Student Scholar',
-    org: 'Association for the Advancement of Artificial Intelligence',
-    year: '2026',
-    desc: 'Awarded for research excellence and poster presentation at the AAAI Conference.',
-    icon: Star,
-    color: 'blue'
-  },
-  {
-    title: 'ECPC Finalist',
-    org: 'Egyptian Collegiate Programming Contest',
-    year: '2024',
-    desc: 'Ranked among top competitive programmers in Egypt.',
+    title: 'Best Student Poster & 3MT Contest Winner',
+    org: 'AAAI 2026 EGSAI Workshop (Singapore)',
+    year: 'Jan 2026',
+    desc: 'Awarded Best Student Poster and crowned 3-Minute Thesis (3MT) Contest Winner at AAAI 2026.',
     icon: Trophy,
     color: 'orange'
   },
   {
-    title: 'Full Microsoft Merit Scholarship',
-    org: 'Microsoft & EUI',
-    year: '2022 – 2026',
-    desc: 'Prestigious full scholarship for undergraduate studies based on academic excellence.',
+    title: 'AAAI 2026 Student Scholar & Travel Grant',
+    org: 'AAAI (Singapore)',
+    year: 'Jan 2026',
+    desc: 'Awarded competitive student scholar and volunteer scholarship with international travel grant.',
+    icon: Star,
+    color: 'blue'
+  },
+  {
+    title: 'Presidential Excellence Scholarship',
+    org: 'Egypt University of Informatics',
+    year: '2021 – 2026',
+    desc: '5-year full merit scholarship awarded to Egypt\'s top high school graduates (~30 nationwide out of ~650,000).',
     icon: Award,
     color: 'cyan'
   },
   {
-    title: 'Dean\'s List & Semester Honors',
+    title: 'Full Microsoft Merit Scholarship',
+    org: 'EUI & Microsoft Egypt',
+    year: '2024 – 2025',
+    desc: 'Full-ride dual-degree fellowship covering 1-year Purdue University tuition and living expenses.',
+    icon: Award,
+    color: 'blue'
+  },
+  {
+    title: 'Purdue Dean\'s List & Semester Honors',
     org: 'Purdue University',
     year: '2024 – 2025',
-    desc: 'Consistent academic excellence maintained at Purdue University.',
+    desc: 'Maintained a perfect 4.0 / 4.0 GPA across Fall 2024 and Spring 2025 semesters.',
+    icon: Medal,
+    color: 'cyan'
+  },
+  {
+    title: 'Purdue OUR Research Scholarship',
+    org: 'Office of Undergraduate Research & College of Liberal Arts',
+    year: 'Dec 2024',
+    desc: 'Competitive university research grant awarded for conversational AI and HCI research.',
+    icon: Star,
+    color: 'orange'
+  },
+  {
+    title: 'EUI Top Achiever & President\'s List',
+    org: 'Egypt University of Informatics',
+    year: 'Oct 2023',
+    desc: 'Recognized for top academic excellence and departmental leadership.',
     icon: Medal,
     color: 'blue'
+  },
+  {
+    title: 'ECPC Finalist (ICPC Regional)',
+    org: 'Egyptian Collegiate Programming Contest',
+    year: 'Aug 2023',
+    desc: 'Ranked among top competitive programming finalists nationwide in the official ICPC regional qualifier.',
+    icon: Trophy,
+    color: 'orange'
   }
 ];
 

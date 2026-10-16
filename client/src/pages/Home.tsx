@@ -1,12 +1,13 @@
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
-import Projects from '@/components/Projects';
-import Education from '@/components/Education';
-import Awards from '@/components/Awards';
+import Publications from '@/components/Publications';
 import Experience from '@/components/Experience';
+import Education from '@/components/Education';
+import Projects from '@/components/Projects';
+import Awards from '@/components/Awards';
+import Press from '@/components/Press';
 import Skills from '@/components/Skills';
 import Community from '@/components/Community';
-import Press from '@/components/Press';
 import Contact from '@/components/Contact';
 import MascotCompanion from '@/components/MascotCompanion';
 
@@ -17,9 +18,10 @@ export default function Home() {
       
       <main>
         <Hero />
-        <Projects />
+        <Publications />
         <Experience />
         <Education />
+        <Projects />
         <Awards />
         <Press />
         <Skills />
@@ -31,15 +33,15 @@ export default function Home() {
 
       <footer className="border-t border-border/50 py-8">
         <div className="container max-w-6xl mx-auto px-4 md:px-8 text-center text-muted-foreground text-sm flex flex-col md:flex-row justify-between items-center gap-4">
-          <p>© 2026 <span className="text-foreground font-semibold">Mohamed Ahmed</span>. All rights reserved.</p>
+          <p>© 2026 <span className="text-foreground font-semibold">Mohamed Ahmed</span> · Purdue University ECE / DSNL Lab</p>
           <div className="flex items-center gap-4 text-xs text-muted-foreground/60">
-            <span>Agentic AI</span>
+            <span>On-Device AI</span>
             <span>·</span>
-            <span>ML Security</span>
+            <span>LLM Inference Systems</span>
             <span>·</span>
-            <span>Edge AI</span>
+            <span>Mobile Runtime Systems</span>
             <span>·</span>
-            <span>HCI</span>
+            <span>LLM Security</span>
           </div>
         </div>
       </footer>

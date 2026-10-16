@@ -6,11 +6,11 @@ const ROBOT_MASCOT = `${import.meta.env.BASE_URL}imgs/robot_mascot2.png`;
 const PROFILE_IMAGE = `${import.meta.env.BASE_URL}imgs/profile_researcher.png`;
 
 const INTEREST_TITLES = [
-  'Agentic AI Engineer',
-  'ML Security Researcher',
-  'Edge AI Systems Builder',
-  'Human-Centered AI Designer',
-  'ML Systems Developer',
+  'Ph.D. Student in ECE @ Purdue',
+  'On-Device AI & LLM Systems Researcher',
+  'Mobile Runtime & Systems Optimizer',
+  'Heterogeneous SoC Acceleration (Snapdragon/Tensor)',
+  'Trustworthy AI & LLM Security Researcher',
 ];
 
 function AnimatedTitle() {
@@ -111,7 +111,7 @@ export default function Hero() {
             <motion.div variants={itemVariants}>
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/30 text-primary text-xs font-bold tracking-widest uppercase mb-6">
                 <Sparkles size={14} />
-                Researcher · Engineer · Builder
+                Ph.D. Student @ Purdue University · DSNL Lab
               </span>
             </motion.div>
 
@@ -125,13 +125,12 @@ export default function Hero() {
             <AnimatedTitle />
 
             <motion.p variants={itemVariants} className="text-base text-muted-foreground leading-relaxed max-w-lg mb-8 mt-4">
-              Exploring trustworthy AI, adversarial robustness, edge AI systems, and human-AI interaction.
-              Building intelligent platforms that bridge the gap between complex research and real-world impact.
+              Ph.D. student in Electrical & Computer Engineering at <strong className="text-foreground">Purdue University</strong> (Distributed Systems & Networks Lab, advised by Prof. Y. Charlie Hu). Researching on-device MoE/LLM inference, mobile runtime systems, and heterogeneous SoC acceleration across Qualcomm Snapdragon and Google Tensor platforms.
             </motion.p>
 
             <motion.div variants={itemVariants} className="flex items-center gap-2 mb-8 justify-center md:justify-start text-sm text-muted-foreground font-medium">
               <MapPin size={16} className="text-accent" />
-              <span>Cairo, Egypt · Purdue University & EUI</span>
+              <span>West Lafayette, IN, USA · Purdue University (DSNL Lab)</span>
             </motion.div>
 
             <motion.div variants={itemVariants} className="flex flex-wrap gap-4 justify-center md:justify-start mb-10">
@@ -173,7 +172,14 @@ export default function Hero() {
 
             {/* Research interests tags */}
             <motion.div variants={itemVariants} className="flex flex-wrap gap-2 justify-center md:justify-start">
-              {['Agentic AI', 'LLM Security', 'Edge AI', 'ML Systems', 'HCI', 'Adversarial ML'].map((tag) => (
+              {[
+                'On-Device AI',
+                'LLM Inference Systems',
+                'Mobile Runtime Systems',
+                'Heterogeneous SoCs',
+                'LLM Security',
+                'Edge AI',
+              ].map((tag) => (
                 <span key={tag} className="badge-primary px-4 py-1.5 text-[10px] uppercase tracking-wider">{tag}</span>
               ))}
             </motion.div>

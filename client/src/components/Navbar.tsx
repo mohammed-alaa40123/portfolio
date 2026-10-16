@@ -1,12 +1,13 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Home, Briefcase, GraduationCap, Trophy, Code, Mail, Sparkles, Newspaper } from 'lucide-react';
+import { Menu, X, Home, Briefcase, GraduationCap, Trophy, Code, Mail, Sparkles, Newspaper, BookOpen } from 'lucide-react';
 
 const navLinks = [
   { name: 'Home', href: '#home', icon: Home },
-  { name: 'Projects', href: '#projects', icon: Code },
+  { name: 'Publications', href: '#publications', icon: BookOpen },
   { name: 'Experience', href: '#experience', icon: Briefcase },
   { name: 'Education', href: '#education', icon: GraduationCap },
+  { name: 'Projects', href: '#projects', icon: Code },
   { name: 'Awards', href: '#awards', icon: Trophy },
   { name: 'Press', href: '#press', icon: Newspaper },
   { name: 'Skills', href: '#skills', icon: Sparkles },
@@ -70,7 +71,7 @@ export default function Navbar() {
               <a
                 key={link.name}
                 href={link.href}
-                className={`px-4 py-2 rounded-full text-[10px] uppercase tracking-wider font-bold transition-all flex items-center gap-2 ${
+                className={`px-3 py-1.5 rounded-full text-[10px] uppercase tracking-wider font-bold transition-all flex items-center gap-1.5 ${
                   activeSection === link.href.substring(1) 
                     ? 'text-white bg-primary shadow-[0_0_15px_rgba(14,165,233,0.4)]' 
                     : 'text-muted-foreground hover:text-foreground hover:bg-white/5'

@@ -3,39 +3,39 @@ import { Cpu, Terminal, Shield, Eye, Database, Globe } from 'lucide-react';
 
 const skillCategories = [
   {
-    category: 'Languages',
+    category: 'Programming Languages',
     icon: Terminal,
-    skills: ['Python', 'C', 'C++', 'CUDA', 'Rust', 'TypeScript', 'Java', 'SQL'],
+    skills: ['C++', 'C', 'Python', 'CUDA', 'ARM Assembly', 'Bash', 'Rust', 'TypeScript', 'Java', 'SQL'],
     color: 'blue',
   },
   {
-    category: 'Deep Learning & CV',
-    icon: Eye,
-    skills: ['CNN', 'LSTM', 'R-CNN', 'ResNet', 'YOLO', 'TensorFlow', 'PyTorch', 'OpenCV'],
+    category: 'Runtime Systems & OS',
+    icon: Cpu,
+    skills: ['Android OS/NDK', 'Linux Kernel Internals', 'Memory Management', 'Memory Mapping (mmap)', 'Runtime Systems', 'Perf/Ftrace', 'CPU DVFS'],
     color: 'cyan',
   },
   {
-    category: 'LLMs & Agentic AI',
-    icon: Cpu,
-    skills: ['Hugging Face', 'LangChain', 'RAG', 'Fine-tuning', 'MCP', 'Quantization'],
+    category: 'Mobile & Edge Hardware',
+    icon: Shield,
+    skills: ['Qualcomm Snapdragon 8 Gen 3', 'Adreno GPU', 'Hexagon NPU', 'Google Tensor', 'Qualcomm Device Cloud', 'UFS Flash I/O', 'Khadas VIM4'],
     color: 'orange',
   },
   {
-    category: 'Cloud & DevOps',
-    icon: Globe,
-    skills: ['Azure', 'AWS', 'GCP', 'Docker', 'FastAPI', 'Streamlit', 'CI/CD'],
+    category: 'Inference & Optimization',
+    icon: Eye,
+    skills: ['llama.cpp', 'MoE Expert Streaming', 'Speculative Prefetching', 'Dynamic Weight Caching', 'INT4/INT8 (GGUF, AWQ, GPTQ)', 'Model Serving', 'vLLM'],
     color: 'blue',
   },
   {
-    category: 'Data & ML',
+    category: 'Deep Learning & Frameworks',
     icon: Database,
-    skills: ['Pandas', 'NumPy', 'Scikit-learn', 'XGBoost', 'FAISS', 'Matplotlib'],
+    skills: ['PyTorch', 'TensorFlow/TFLite', 'ONNX Runtime', 'Hugging Face Transformers', 'DeepSpeed', 'OpenCV', 'CNN/LSTM/YOLO'],
     color: 'cyan',
   },
   {
-    category: 'Security & Research',
-    icon: Shield,
-    skills: ['Adversarial ML', 'Red Teaming', 'Edge AI', 'HCI', 'NLP', 'OCR'],
+    category: 'Agentic AI & Infrastructure',
+    icon: Globe,
+    skills: ['Agentic AI', 'Model Context Protocol (MCP)', 'GraphRAG', 'Docker', 'Microsoft Azure', 'AWS', 'GCP', 'FastAPI', 'CI/CD Pipelines'],
     color: 'orange',
   },
 ];
@@ -100,15 +100,28 @@ export default function Skills() {
 
         {/* Certifications */}
         <motion.div
-          className="mt-12 glass-card p-6 flex flex-col md:flex-row items-center justify-between gap-6"
+          className="mt-12 glass-card p-6 flex flex-col md:flex-row items-center justify-between gap-6 border border-primary/20"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <p className="text-xs text-muted-foreground font-bold uppercase tracking-widest">Certifications & Specializations</p>
-          <div className="flex flex-wrap gap-3 justify-center">
-            {['Azure AI Engineer', 'Purdue Honors Scholar', 'Microsoft Scholarship'].map((cert) => (
-              <span key={cert} className="badge-primary px-4 py-1.5 text-[10px] uppercase font-bold">{cert}</span>
+          <p className="text-xs text-muted-foreground font-bold uppercase tracking-widest">
+            Certifications & Industry Credentials
+          </p>
+          <div className="flex flex-wrap gap-2.5 justify-center">
+            {[
+              'Microsoft Azure AI Fundamentals',
+              'DeepLearning.AI Machine Learning',
+              'IBM Applied Data Science Specialization',
+              'AWS Cloud Foundations',
+              'WorldQuant Applied Data Science Lab',
+            ].map((cert) => (
+              <span
+                key={cert}
+                className="badge-primary px-3 py-1 text-[10px] uppercase font-bold tracking-tight"
+              >
+                {cert}
+              </span>
             ))}
           </div>
         </motion.div>
